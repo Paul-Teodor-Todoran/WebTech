@@ -1,0 +1,212 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background: #202b39;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(180deg, #293b50 0%, #202b39 100%);
+    color: #e5e9ef;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.page {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 54px 20px 60px;
+}
+
+.card {
+    width: 100%;
+    max-width: 700px;
+    padding: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    margin: 16px 0 20px;
+    color: #ffca4b;
+    font-size: 28px;
+    text-align: center;
+}
+
+.row {
+    min-width: 0;
+    margin: 0 0 12px;
+    text-align: left;
+}
+
+fieldset {
+    padding: 0;
+    border: 0;
+}
+
+.row label,
+.row legend {
+    display: block;
+    margin-bottom: 6px;
+    padding: 0;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    min-width: 0;
+    padding: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.06);
+    color: #e5e9ef;
+    font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #83909d;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #ffca4b;
+    outline-offset: 2px;
+}
+
+select option {
+    background: #354454;
+    color: #e5e9ef;
+}
+
+textarea {
+    display: block;
+    resize: vertical;
+}
+
+.two-col {
+    display: flex;
+    gap: 12px;
+}
+
+.two-col > div {
+    flex: 1;
+    min-width: 0;
+}
+
+.gender-options label {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    min-height: 24px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: 13px;
+    height: 13px;
+    margin: 0;
+    padding: 0;
+    accent-color: #ffca4b;
+}
+
+.checkbox-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.checkbox-grid label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+}
+
+input[type="file"] {
+    padding: 8px;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.btn {
+    padding: 9px 12px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn.primary {
+    background: #ffcf5a;
+    color: #fff;
+}
+
+.btn.primary:hover {
+    background: #e8b43c;
+}
+
+.btn.ghost {
+    border-color: rgba(255, 255, 255, 0.16);
+    background: transparent;
+    color: #e5e9ef;
+}
+
+.btn.ghost:hover {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.login-link {
+    margin: 18px 0 0;
+    color: #b8c0cc;
+    font-size: 12px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #ffca4b;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 520px) {
+    .page {
+        padding: 24px 16px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .two-col {
+        flex-direction: column;
+    }
+
+    .checkbox-grid {
+        justify-content: flex-start;
+        gap: 16px;
+    }
+}
