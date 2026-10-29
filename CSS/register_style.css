@@ -196,15 +196,12 @@ input[type="file"] {
     .page {
         padding: 24px 16px;
     }
-
     .card {
         padding: 20px;
     }
-
     .two-col {
         flex-direction: column;
     }
-
     .checkbox-grid {
         justify-content: flex-start;
         gap: 16px;

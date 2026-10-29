@@ -135,11 +135,9 @@ footer a:hover {
     .container {
         width: calc(100% - 40px);
     }
-
     .columns {
         justify-content: center;
     }
-
     .column {
         flex: 1 1 260px;
         max-width: 400px;
@@ -150,7 +148,6 @@ footer a:hover {
     header h1 {
         font-size: 26px;
     }
-
     header nav {
         flex-wrap: wrap;
         gap: 12px 20px;
@@ -159,7 +156,6 @@ footer a:hover {
     main {
         padding: 10px 0;
     }
-
     .columns {
         flex-direction: column;
         gap: 15px;

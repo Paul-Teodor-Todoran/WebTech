@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 16px;
+    background: #0f172a;
+    color: #e5e7eb;
+}
+
+.status {
+    opacity: .8;
+    margin: 12px 0;
+}
+
+input {
+    padding: .5rem;
+    border-radius: .5rem;
+    border: 1px solid #334155;
+    background: #0b1220;
+    color: #e5e7eb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+    background: #0b1220;
+}
+
+th, td {
+    padding: .55rem;
+    border-bottom: 1px solid #334155;
+    text-align: left;
+    vertical-align: top;
+}
+
+a {
+    color: #a7f3d0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

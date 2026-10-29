@@ -1,25 +1,33 @@
 body {
-background: linear-gradient(90deg, #3471B8, #024A76);
+    background: linear-gradient(90deg, #3471B8, #024A76);
 }
+
 .loading-container {
-display: flex;
-flex-direction: column;
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 .logo {
-width: 200px;
-height: auto;
-margin-bottom: 30px;
+    width: 200px;
+    height: auto;
+    margin-bottom: 30px;
 }
+
 .loader {
-border: 8px solid #dce5ed;
-border-top: 8px solid #3471B8;
-border-radius: 50%;
-width: 50px;
-height: 50px;
-animation: spin 2s linear infinite;
+    border: 8px solid #dce5ed;
+    border-top: 8px solid #3471B8;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
 }
+
 @keyframes spin {
-0% { transform: rotate(0deg); }
-100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
