@@ -13,15 +13,16 @@
 <img src="../MEDIA/INFO_Asset%2010.png" alt="UVT Facultatea de Informatică">
 </div>
 <div class="separator"></div>
-<div class="login-form">
+<form class="login-form" id="login-form">
 <h1>Login</h1>
-<input type="email" placeholder="Email" aria-label="Email">
-<input type="password" placeholder="Parola" aria-label="Parola">
-<button>Login</button>
+<input type="email" id="email" placeholder="Email" aria-label="Email" autocomplete="username" required>
+<input type="password" id="password" placeholder="Parola" aria-label="Parola" autocomplete="current-password" required>
+<button type="submit">Login</button>
 <p class="register-text">
-Nu ai cont? <a href="#">Înregistrează-te</a>
+Nu ai cont? <a href="register.html">Înregistrează-te</a>
 </p>
+</form>
 </div>
-</div>
+<script src="../JS/login_js.js"></script>
 </body>
 </html>
